@@ -7,11 +7,11 @@ using namespace std;
 
 
 Character::Character(){
-	health = rand() % 100;
-	skill = rand() % 100;
-	speed = rand() % 100;
-	defense = rand() % 100;
-	strength = rand() % 100;
+	health = rand() % 90 + 10;
+	skill = rand() % 90 + 10;
+	speed = rand() % 90 + 10;
+	defense = rand() % 90 + 10;
+	strength = rand() % 90 + 10;
 }
 
 Character::Character(int health_stat, int speed_stat, int strength_stat, int skill_stat, int defense_stat){
