@@ -11,7 +11,7 @@ Character::Character(){
 	skill = rand() % 90 + 10;
 	speed = rand() % 90 + 10;
 	defense = rand() % 90 + 10;
-	strength = rand() % 90 + 10;
+	strength = rand() % 91 + 10;
 }
 
 Character::Character(int health_stat, int speed_stat, int strength_stat, int skill_stat, int defense_stat){
