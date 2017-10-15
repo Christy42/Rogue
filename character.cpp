@@ -26,16 +26,9 @@ Character::Character(int health_stat, int speed_stat, int strength_stat, int ski
 }
 
 Character::~Character(){
-	if(health < 0){
+	if(health <= 0){
 		cout<<name<<" has died"<<endl;
 	}
-}
-
-
-Character::~Character(){
-	if(health < 0){
-	    cout<<name<<" is dead"<<endl;
-    }
 }
 
 void Character::print_stats()
@@ -52,9 +45,11 @@ void Character::hit(int damage, int str)
 {
 	cout<<"begin damage"<<endl;
 	cout<<damage<<endl;
+	cout<<defense - strength<<endl;
 	for(int i=0; i<defense - strength; i++) {
 		damage -= rand() % 2;
 	}
 	cout<<damage<<endl;
+	cout<<"End Damage"<<endl;
 	health -= damage;
 }
